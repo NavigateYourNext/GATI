@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Account Details</title>
+</head>
+<style>
+
+.imgcontainer 
+{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.avatar 
+{
+    width: 10%;
+    border-radius: 50%;
+}
+.container 
+{
+    padding: 16px;
+}
+
+h1
+{
+ color:#c71585;
+ text-align:center;
+}
+
+button:hover 
+{
+    opacity: 0.8;
+}
+.time
+{
+ padding:20px;
+ color:red;
+ position:absolute;
+ top:7%;
+ left:72%;
+}
+
+
+button
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-left:80px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    align:center;
+}
+
+input[type=text]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color:red;
+}
+
+.back
+{
+ position:absolute;
+ top:480px;
+ left:450px;
+}
+
+h7
+{
+ 
+ position: absolute;
+ left: 660px;
+ top: 80px;
+ color:violet;
+}
+
+
+</style>
+
+<body style="background-color:#fffff0;">
+
+<form action="Account.jsp" method="post">
+
+
+<div class="imgcontainer">
+<img src="E:\Akshay Docs\Sample\Easy Transfer\WebContent\Gati.png" height="100" width="300"></img>
+</div>
+<h7>A small step towards DIGITALIZATION !</h7>
+
+<div class="time">
+<script type="text/javascript">
+document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</div>
+
+<div class="imgcontainer">
+<img src="E:\Akshay Docs\Sample\Easy Transfer\WebContent\img_avatar2.png" alt="Avatar" class="avatar">
+</div>
+
+<div class="container">
+
+<table align="center" style="border:3px solid black;padding:20px;border-spacing:5px;">
+<tr>
+<th><label><b>Enter Benificiary Account No. </b></label></th>
+<td><input type="text" pattern=[0-9]{5,16} maxlength="16" title="[0-9]" name="ano" placeholder="Enter Account No" required></td>
+</tr>
+<tr>
+<th><label><b>Enter Benificiary IFSC. </b></label></th>
+<td><input type="text" pattern=[A-Z]{4}0[0-9]{6} size="30" title="Enter Proper IFSC" name="ifsc" placeholder="Enter IFSC" required></td>
+</tr>
+<tr>
+<td><button type="Submit">Verify Benificiary</button></td>
+</tr>
+</table>
+</div>
+</form>
+<div class="back">
+<a href="http://localhost:8028/Easy_Transfer/Transfer.html">Back</a>
+</div>
+</script>
+</body>
+</html>

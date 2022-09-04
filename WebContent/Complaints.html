@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Register Your Complaints Here</title>
+<style>
+h7
+{
+ 
+ position: absolute;
+ left: 660px;
+ top: 80px;
+ color:violet;
+}
+.imgcontainer 
+{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+input[type=text], input[type=email], textarea
+{
+    width: 100%;
+    padding: 5px 5px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color:blue;
+}
+
+.avatar 
+{
+    width: 15%;
+    border-radius: 50%;
+}
+
+h2
+{
+ text-align:center;
+ padding:20px;
+ color:#dc143c;
+}
+.complaints
+{
+ padding:20px;
+}
+.time
+{
+ padding:20px;
+ color:red;
+ position:absolute;
+ top:7%;
+ left:72%;
+}
+button
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    align:center;
+}
+.back
+{
+ top:93%;
+ left:39%;
+ position:absolute;
+}
+</style>
+</head>
+
+<form method="post" action="CompReg.jsp">
+
+<body style="background-color:#fff8dc;">
+
+<div class="imgcontainer">
+<img src="Gati.png" height="100" width="300"></img>
+</div>
+<h7>A small step towards DIGITALIZATION !</h7>
+
+<div class="imgcontainer">
+<img src="complaint.jpg" alt="Avatar" class="avatar">
+</div>
+
+<div class="complaints">
+
+<table align="center" style="border:3px solid black;padding:20px;border-spacing:5px;">
+<tr>
+<th><label><b>To:-</b></label></th>
+<td><input type="text" name="To" value="complaintsQT@qt.co.in" size="30" disabled></td>
+</tr>
+<tr>
+<th><label><b>From:-</b></label></th>
+<td><input type="email" name="From" size="30" required></td>
+</tr>
+<tr>
+<th><label><b>Mobile No:-</b></label></th>
+<td><input type="text" size ="30" pattern=[0-9]{10} title="[0-9]" maxlength="10" name="Mob" placeholder="Mobile No. Without +91" required></td>
+</tr>
+<tr>
+<th><label><b>Query:</b></label></th>
+<td><textarea rows="7" cols="22" name="Query" required></textarea></td>
+</tr> 
+<tr>
+<td colspan="9"><button type="Submit">Submit Query</button></td>
+</tr>
+</table>
+</div>
+
+<div class="time">
+<script type="text/javascript">
+document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</div>
+
+
+<div class="back">
+<a href="ContactUs.jsp">Back</a>
+</div>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Select Transfer Method</title>
+</head>
+<style>
+
+.imgcontainer 
+{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.avatar 
+{
+    width: 10%;
+    border-radius: 50%;
+}
+.container 
+{
+    padding: 16px;
+}
+
+h1
+{
+ color:#c71585;
+ text-align:center;
+}
+
+button:hover 
+{
+    opacity: 0.8;
+}
+
+
+
+.signupbtn 
+{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #d2691e;
+    position:absolute;
+    top:75%;
+    left:38%;
+    
+}
+
+
+.contactbtn 
+{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #6495ed;
+    position:absolute;
+    top:75%;
+    left:56%;
+    
+}
+
+.time
+{
+ padding:20px;
+ color:red;
+ position:absolute;
+ top:7%;
+ left:72%;
+}
+
+
+button
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    align:center
+}
+
+</style>
+
+<body style="background-color:#fffff0;">
+
+
+
+<h1>Select Transfer Method</h1>
+
+<div class="time">
+<script type="text/javascript">
+document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</div>
+
+<div class="imgcontainer">
+<img src="img_avatar2.png" alt="Avatar" class="avatar">
+</div>
+
+<form action="HelloServlet" method="get">
+
+<div class="container">
+
+<table align="center" style="border:3px solid black;padding:20px;border-spacing:5px;">
+<tr>
+<td><button type="Submit" class="forgotbtn" name="button" value="Account">Account + IFSC</button></td>
+<td><button type="Submit" class="forgotbtn" name="button" value="Aadhar">Aadhar Number</button></td>
+</tr>
+<tr>
+<td><button type="Submit" class="forgotbtn" name="button" value="UPI" title="Its very fast way of transfer. Benificiary should have UPI linked to his own account.">UPI</button></td>
+<td><button type="Submit" class="forgotbtn" name="button" value="VPA">VPA</button></td>
+</tr>
+</table>
+</div>
+</form>
+<a href="http://localhost:8028/Easy_Transfer/Balance.jsp">Back</a>
+</body>
+</html>

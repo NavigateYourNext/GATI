@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sign Up</title>
+</head>
+
+<style>
+input[type=text],Select,input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color:blue;
+}
+h1
+{
+ color:#c71585;
+ text-align:center;
+}
+.imgcontainer
+{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.question
+{
+    width: 10%;
+    border-radius: 50%;
+}
+.container 
+{
+    padding: 16px;
+}
+button:hover 
+{
+    opacity: 0.8;
+}
+button
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    align:center
+}
+.back
+{
+ top:91%;
+ left:37%;
+ position:absolute;
+}
+.container1
+{
+ text-align:center;
+}
+.time
+{
+ padding:20px;
+ color:red;
+ position:absolute;
+ top:7%;
+ left:72%;
+}
+
+h7
+{
+ 
+ position: absolute;
+ left: 660px;
+ top: 80px;
+ color:violet;
+}
+h5
+{
+ color:red;
+ position:absolute;
+ top:500px;
+ left:900px;
+}
+
+</style>
+
+<body style="background-color:#fff8dc;">
+
+<form action="SignUp.jsp" method="POST">
+
+<div class="imgcontainer">
+<img src="Gati.png" height="100" width="300"></img>
+</div>
+<h7>A small step towards DIGITALIZATION !</h7>
+
+<div class="time">
+<script type="text/javascript">
+document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</div>
+
+
+<div class="imgcontainer">
+<img src="signup.jpg" alt="Question Mark" class="question"></img>
+</div>
+
+<form method="post" action="SignUp.jsp">
+
+<div class="container">
+
+<table align="center" style="border:3px solid black;padding:20px;border-spacing:5px;">
+<tr>
+<th><label><b>Mobile No</b></label></th>
+<td><input type="text" pattern=[0-9]{10} title="[0-9]" maxlength="10" name="Mob" placeholder="Mobile No. Without +91" required></td>
+</tr>
+<tr>
+<th><label><b>Select Your Bank</b></label></th>
+<td>
+  <select size="0" name="Bname" required>
+  <option value="Error:502">Select Your Bank</option>
+  <option value="Axis Bank">Axis Bank</option>
+  <option value="Bank Of India">Bank Of India</option>
+  <option value="ICICI Bank">ICICI Bank</option>
+  <option value="State Bank Of India">State Bank Of India</option>
+  <option value="HDFC Bank">HDFC Bank</option>
+</select></td>
+</tr>
+<tr>
+<th><label><b>Enter Debit Card No</b></label></th>
+<td><input type="password" name="db" pattern=[0-9]{6} title="[0-9]" maxlength="6" placeholder="Enter Last 6 Digits Only" required></td>
+</tr>
+<tr>
+<th><label><b>Enter CVV</b></label></th>
+<td><input type="password" name="cvv" pattern=[0-9]{3} title="[0-9]" maxlength="3" placeholder="Enter CVV" required></td>
+</tr>
+<tr>
+<td colspan="7"><button type="Submit">SUBMIT</button></td>
+</tr>
+</table>
+</div>
+
+<h5>(CVV is a 3 digit number present on back of your Debit Card)</h5>
+
+<div class="back">
+<a href="http://localhost:8028/Easy_Transfer/LoginWindow.html">Back</a>
+</div>
+
+</form>
+</body>
+</html>
